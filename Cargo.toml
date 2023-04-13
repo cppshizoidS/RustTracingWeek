@@ -1,0 +1,24 @@
+[package]
+name = "shimmer"
+version = "0.1.0"
+edition = "2021"
+authors = ["cppshizoidS"]
+description = "A CPU-bound ray tracing library"
+
+[lib]
+name = "shimmer"
+path = "src/lib.rs"
+
+[[bin]]
+name = "shimmer"
+path = "src/main.rs"
+
+[dependencies]
+clap = { version = "4.0.29", features = ["derive", "cargo"] }
+glam = "0.23.0"
+image = "0.24.5"
+indicatif = { version = "0.17.2", features = ["rayon"] }
+noise = "0.8.2"
+palette = "0.7.0"
+rand = "0.8.5"
+rayon = "1.6.1"
